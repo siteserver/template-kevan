@@ -1,0 +1,47 @@
+<div id="header"> 
+	<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<stl:if testType="ChannelName" testOperate="Equals" testValue="首页">
+					<stl:yes>
+						<li class="current"><a href="{stl.siteurl}/index.html">首&nbsp;&nbsp;页</a></li>
+					</stl:yes>
+					<stl:no>
+							<li><a href="{stl.siteurl}/index.html">首&nbsp;&nbsp;页</a></li>
+					</stl:no>
+				</stl:if> 
+				<stl:channels channelIndex="首页" groupChannel="主导航">
+					<stl:if testType="UpChannelOrSelf">
+						<stl:yes>
+							<li class="current">
+								<stl:a topLevel="1"></stl:a>  
+								<stl:if testType="CountOfChannels" testOperate="GreatThan" testValue="0">
+									<stl:yes>
+										<ul>
+											<stl:channels>
+												<li><stl:a></stl:a></li>
+											</stl:channels>
+										</ul>
+									</stl:yes>
+								</stl:if>
+							</li>
+						</stl:yes>
+						<stl:no>
+							<li>
+								<stl:a topLevel="1"></stl:a>  
+								<stl:if testType="CountOfChannels" testOperate="GreatThan" testValue="0">
+									<stl:yes>
+										<ul>
+											<stl:channels>
+												<li><stl:a></stl:a></li>
+											</stl:channels>
+										</ul>
+									</stl:yes>
+								</stl:if>
+							</li>
+						</stl:no>
+					</stl:if>
+				</stl:channels> 
+			</ul>
+		</nav>
+</div>

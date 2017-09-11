@@ -1,0 +1,46 @@
+<!-- CTA -->
+<section id="cta" class="wrapper style3">
+    <div class="container">
+        <header>
+            <h2>{stl.Sologon}</h2>
+            <stl:a channelIndex="联系我们" class="button">欢迎加入我们</stl:a>
+        </header>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <stl:channels channelIndex="首页" groupChannel="底部导航">
+                <section class="3u 6u(narrower) 12u$(mobilep)">
+                    <h3><stl:channel type="Title" topLevel="1"></stl:channel> </h3>
+                    <stl:if testType="CountOfChannels" testOperate="GreatThan" testValue="0">
+                        <stl:yes>
+                            <ul class="links">
+                                <stl:channels>
+                                    <li><stl:a></stl:a></li>
+                                </stl:channels>
+                            </ul>
+                        </stl:yes>
+                    </stl:if>
+                </section>
+            </stl:channels>  
+        </div>
+    </div>
+
+    <!-- Icons -->
+        <ul class="icons">
+            <li><a href="#" class="icon fa-qq"><span class="label">QQ</span></a></li>
+            <li><a href="#" class="icon fa-weibo"><span class="label">Weibo</span></a></li>
+            <li><a href="#" class="icon fa-wechat"><span class="label">WeChat</span></a></li> 
+        </ul>
+
+    <!-- Copyright -->
+        <div class="copyright">
+            <ul class="menu">
+                <li>Copyright © 2003-2017 {stl.Company} All rights reserved</li><li>技术支持: <a href="http://www.siteserver.cn" target="_blank">SiteServer CMS</a></li>
+            </ul>
+        </div>
+
+</div>

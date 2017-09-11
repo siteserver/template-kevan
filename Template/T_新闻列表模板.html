@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{Channel.Title}-{stl.Company}</title>
+        <stl:include file="@/include/header.html"></stl:include>
+  </head>
+  <body>
+    <div id="page-wrapper">
+
+      <!-- Header -->
+            <stl:include file="@/include/nav.html"></stl:include>
+
+        <!-- Main -->
+        <section class="wrapper style1">
+          <div class="container">
+            <div class="row 200%">
+              <div class="8u 12u(narrower)">
+                <stl:pageContents pageNum="5">
+                    <div class="box post">
+                        <stl:a class="image left"><img src="{Content.ImageUrl}" alt="" /></stl:a>
+                        <div class="inner">
+                            <h3><stl:content type="Title" wordNum="20"></stl:content></h3>
+                            <p><stl:a><stl:content type="Summary" wordNum="90"></stl:content></stl:a></p>
+                        </div>
+                    </div>
+                </stl:pageContents> 
+                <stl:pageItem type="PreviousPage">
+                    <stl:yes>
+                        <a href="{Current.Url}" style="margin-right:8px">上一页</a>
+                    </stl:yes>
+                    <stl:no>
+                        <a href="javascript:void(0);" style="margin-right:8px;color:#000">上一页</a>
+                    </stl:no>
+                </stl:pageItem>
+                <stl:pageItem type="PageNavigation" listNum="10">
+                    <stl:yes>
+                        <a href="{Current.Url}" style="margin-right:8px">{Current.Num}</a>
+                    </stl:yes>
+                    <stl:no>
+                        <a href="javascript:void(0);" style="margin-right:8px;color:#000">{Current.Num}</a>
+                    </stl:no>
+                </stl:pageItem>
+                <stl:pageItem type="NextPage">
+                    <stl:yes>
+                        <a href="{Current.Url}" style="margin-right:8px">下一页</a>
+                    </stl:yes>
+                    <stl:no>
+                        <a href="javascript:void(0);" style="margin-right:8px;color:#000">下一页</a>
+                    </stl:no>
+                </stl:pageItem>
+              </div>
+              <div class="4u 12u(narrower)">
+                <div id="sidebar"> 
+                  <!-- Sidebar --> 
+                  <section>
+                    <footer>
+                      <stl:a class="button"></stl:a>
+                    </footer>
+                  </section>
+
+                  <section>
+                    <h3>最新内容</h3>
+                    <ul class="links">
+                        <stl:contents topLevel="0" scope="All"  totalNum="6">
+                            <li><stl:a><stl:content wordNum="16"></stl:content></stl:a></li>
+                        </stl:contents>
+                    </ul>
+                  </section> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            <stl:include file="@/include/footer.html"></stl:include>
+
+    </div>
+
+        <!-- Scripts -->
+        <stl:include file="@/include/js.html"></stl:include> 
+
+  </body>
+</html>

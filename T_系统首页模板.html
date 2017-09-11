@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>首页-{stl.Company}</title>
+    <stl:include file="@/include/header.html"></stl:include>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      
+      <!-- Header -->        
+      <stl:include file="@/include/nav.html"></stl:include>
+      <!-- Banner -->
+      <stl:contents channelIndex="辅助栏目" totalNum="1">
+        <section id="banner" style="background-image:url({Content.ImageUrl})">
+          <header>
+            <h2>{Content.Title}</h2>
+            <a href="{Content.NavigationUrl}" class="button">了解更多</a>
+          </header>
+        </section>
+      </stl:contents>
+      <!-- Highlights -->
+      <section class="wrapper style1">
+        <div class="container">
+          <div class="row 200%">
+            <stl:channels channelIndex="产品与服务">
+              <section class="4u 12u(narrower)">
+                <div class="box highlight">
+                  <i class="icon major fa-paper-plane"></i>
+                  <h3>{Channel.Title}</h3>
+                  <p><stl:a target="_blank">{Channel.Description}</stl:a></p>
+                </div>
+              </section>
+            </stl:channels>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Gigantic Heading -->
+      <section class="wrapper style2">
+        <div class="container">
+          <header class="major">
+            <stl:contents channelIndex="辅助栏目" totalNum="2" startNum="2">
+              <h2>{Content.Title}</h2>
+              <p>{Content.SubTitle}</p>
+            </stl:contents>
+          </header>
+        </div>
+      </section>
+      
+      <!-- Posts -->
+      <section class="wrapper style1">
+        <div class="container">
+          <div class="row">
+            <stl:contents ChannelIndex="新闻动态" scope="Children" totalNum="4" isImage="true">
+              <section class="6u 12u(narrower)">
+                <div class="box post">
+                  <stl:a class="image left"><img src="{Content.ImageUrl}" alt="" /></stl:a>
+                  <div class="inner">
+                    <h3><stl:content wordNum="15"></stl:content></h3>
+                    <p><stl:a><stl:content type="Summary" wordNum="55"></stl:content></stl:a></p>
+                  </div>
+                </div>
+              </section>
+            </stl:contents> 
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <stl:include file="@/include/footer.html"></stl:include>  
+    </div>
+    
+    <!-- Scripts -->
+    <stl:include file="@/include/js.html"></stl:include> 
+  </body>
+</html>

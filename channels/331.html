@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>联系我们-北京小黄车汽车用品有限公司</title>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="/Kevan/assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="/Kevan/assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="/Kevan/assets/css/ie8.css" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="/Kevan/assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" type="text/css" href="http://webapi.amap.com/theme/v1.3/style1503546983737.css">
+		<style>
+			.my-map {
+				margin: 0 auto;
+				width: 1200px;
+				height: 400px;
+			}
+
+			.my-map .icon {
+				background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat;
+			}
+
+			.my-map .icon-cir {
+				height: 31px;
+				width: 28px;
+			}
+
+			.my-map .icon-cir-red {
+				background-position: -11px -5px;
+			}
+
+			.amap-container {
+				height: 100%;
+			}
+		</style>
+
+	<script>var $pageInfo = {publishmentSystemID : 317, channelID : 331, contentID : 0, siteUrl : "/Kevan", homeUrl : "/home", currentUrl : "/Kevan/channels/331.html", rootUrl : "", apiUrl : "/api"};</script></head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+            <div id="header"> 
+	<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				
+							<li><a href="/Kevan/">首&nbsp;&nbsp;页</a></li>
+					 
+				
+					
+							<li>
+								<a href="/Kevan/channels/319.html">产品与服务</a>  
+								
+										<ul>
+											
+												<li><a href="/Kevan/channels/319.html">时尚跑车系列</a></li>
+											
+												<li><a href="/Kevan/channels/320.html">潮驾SUV系列</a></li>
+											
+												<li><a href="/Kevan/channels/321.html">未来概念车系列</a></li>
+											
+										</ul>
+									
+							</li>
+						
+				
+					
+							<li>
+								<a href="/Kevan/channels/323.html">新闻动态</a>  
+								
+										<ul>
+											
+												<li><a href="/Kevan/channels/323.html">企业新闻</a></li>
+											
+												<li><a href="/Kevan/channels/324.html">媒体报道</a></li>
+											
+										</ul>
+									
+							</li>
+						
+				
+					
+							<li>
+								<a href="/Kevan/channels/326.html">成功案例</a>  
+								
+										<ul>
+											
+												<li><a href="/Kevan/channels/326.html">传统行业</a></li>
+											
+												<li><a href="/Kevan/channels/327.html">互联网行业</a></li>
+											
+										</ul>
+									
+							</li>
+						
+				
+					
+							<li>
+								<a href="/Kevan/channels/329.html">关于我们</a>  
+								
+										<ul>
+											
+												<li><a href="/Kevan/channels/329.html">企业简介</a></li>
+											
+												<li><a href="/Kevan/channels/330.html">企业文化</a></li>
+											
+										</ul>
+									
+							</li>
+						
+				
+					
+							<li class="current">
+								<a href="/Kevan/channels/331.html">联系我们</a>  
+								
+							</li>
+						
+				 
+			</ul>
+		</nav>
+
+</div>
+				<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+							<article>
+								<header>
+									<h2>联系我们</h2>
+								</header>
+									<span class="image featured"><img src="/Kevan/upload/images/banner.jpg" alt="" /></span>
+									<p></p>
+									<p>地　址：北京市海淀区四季青路7号院1号楼</p><p>电　话：4006-138-007 (010)82743368</p><p>传　真：(010)82609363</p><p><br/></p>
+
+									<div id="wrap" class="my-map">
+										<div id="mapContainer"></div>
+									</div>
+									<script src="http://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+									<script>
+										!function () { 
+											var infoWindow, map, level = 17,
+												center = { lng: 116.271926, lat: 39.954243 },
+												features = [{ type: "Marker", name: "北京百容千域软件技术开发有限责任公司", desc: "四季青路七号院1号楼优客工场（海淀招商大厦斜对面）", color: "red", icon: "cir", offset: { x: -9, y: -31 }, lnglat: { lng: 116.271958, lat: 39.954243 } }];
+
+											function loadFeatures() {
+												for (var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++) {
+													data = features[i];
+													switch (data.type) {
+														case "Marker":
+															feature = new AMap.Marker({
+																map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+																zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+																content: '<div class="icon icon-' + data.icon + ' icon-' + data.icon + '-' + data.color + '"></div>'
+															});
+															break;
+														case "Polyline":
+															for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+																path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+															}
+															feature = new AMap.Polyline({
+																map: map, path: path, extData: data, zIndex: 2,
+																strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity
+															});
+															break;
+														case "Polygon":
+															for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+																path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+															}
+															feature = new AMap.Polygon({
+																map: map, path: path, extData: data, zIndex: 1,
+																strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+																fillColor: data.fillColor, fillOpacity: data.fillOpacity
+															});
+															break;
+														default: feature = null;
+													}
+													if (feature) { AMap.event.addListener(feature, "click", mapFeatureClick); }
+												}
+											}
+
+											function mapFeatureClick(e) {
+												if (!infoWindow) { infoWindow = new AMap.InfoWindow({ autoMove: true }); }
+												var extData = e.target.getExtData();
+												infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+												infoWindow.open(map, e.lnglat);
+											}
+
+											map = new AMap.Map("mapContainer", { center: new AMap.LngLat(center.lng, center.lat), level: level });
+
+											loadFeatures();
+
+											map.on('complete', function () {
+												map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function () {
+													map.addControl(new AMap.ToolBar);
+													map.addControl(new AMap.OverView({ isOpen: true }));
+													map.addControl(new AMap.Scale);
+												});
+											})
+
+										}();
+									</script> 
+								
+							</article>
+
+						</div>
+					</div>
+				</section> 
+			<!-- Footer -->
+            <!-- CTA -->
+<section id="cta" class="wrapper style3">
+    <div class="container">
+        <header>
+            <h2>诚信创造价值，尊重成就共赢。</h2>
+            <a href="/Kevan/channels/331.html" class="button">欢迎加入我们</a>
+        </header>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            
+                <section class="3u 6u(narrower) 12u$(mobilep)">
+                    <h3>产品与服务 </h3>
+                    
+                            <ul class="links">
+                                
+                                    <li><a href="/Kevan/channels/319.html">时尚跑车系列</a></li>
+                                
+                                    <li><a href="/Kevan/channels/320.html">潮驾SUV系列</a></li>
+                                
+                                    <li><a href="/Kevan/channels/321.html">未来概念车系列</a></li>
+                                
+                            </ul>
+                        
+                </section>
+            
+                <section class="3u 6u(narrower) 12u$(mobilep)">
+                    <h3>新闻动态 </h3>
+                    
+                            <ul class="links">
+                                
+                                    <li><a href="/Kevan/channels/323.html">企业新闻</a></li>
+                                
+                                    <li><a href="/Kevan/channels/324.html">媒体报道</a></li>
+                                
+                            </ul>
+                        
+                </section>
+            
+                <section class="3u 6u(narrower) 12u$(mobilep)">
+                    <h3>成功案例 </h3>
+                    
+                            <ul class="links">
+                                
+                                    <li><a href="/Kevan/channels/326.html">传统行业</a></li>
+                                
+                                    <li><a href="/Kevan/channels/327.html">互联网行业</a></li>
+                                
+                            </ul>
+                        
+                </section>
+            
+                <section class="3u 6u(narrower) 12u$(mobilep)">
+                    <h3>关于我们 </h3>
+                    
+                            <ul class="links">
+                                
+                                    <li><a href="/Kevan/channels/329.html">企业简介</a></li>
+                                
+                                    <li><a href="/Kevan/channels/330.html">企业文化</a></li>
+                                
+                            </ul>
+                        
+                </section>
+              
+        </div>
+    </div>
+
+    <!-- Icons -->
+        <ul class="icons">
+            <li><a href="#" class="icon fa-qq"><span class="label">QQ</span></a></li>
+            <li><a href="#" class="icon fa-weibo"><span class="label">Weibo</span></a></li>
+            <li><a href="#" class="icon fa-wechat"><span class="label">WeChat</span></a></li> 
+        </ul>
+
+    <!-- Copyright -->
+        <div class="copyright">
+            <ul class="menu">
+                <li>Copyright © 2003-2017 北京小黄车汽车用品有限公司 All rights reserved</li><li>技术支持: <a href="http://www.siteserver.cn" target="_blank">SiteServer CMS</a></li>
+            </ul>
+        </div>
+
+</div> 
+		</div> 
+		<script src="/Kevan/assets/js/jquery.min.js"></script>
+<script src="/Kevan/assets/js/jquery.dropotron.min.js"></script>
+<script src="/Kevan/assets/js/skel.min.js"></script>
+<script src="/Kevan/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/Kevan/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/Kevan/assets/js/main.js"></script>  
+	</body>
+</html>

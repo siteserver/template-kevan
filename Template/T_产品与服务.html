@@ -1,0 +1,58 @@
+
+<!DOCTYPE HTML>
+<html>
+        <head>
+            <title>{Channel.Title}-{stl.Company}</title>
+            <stl:include file="@/include/header.html"></stl:include>
+        </head>
+        <body>
+            <div id="page-wrapper">
+    
+                <!-- Header -->
+                <stl:include file="@/include/nav.html"></stl:include>
+                    <!-- Main -->
+                    <section class="wrapper style1">
+                        <div class="container">
+                            <div class="row 200%">
+                                <div class="4u 12u(narrower)">
+                                    <div id="sidebar">
+    
+                                        <!-- Sidebar --> 
+                                        <section>
+                                            <footer>
+                                                <stl:channels topLevel="1">
+                                                    <stl:a class="button"></stl:a>
+                                                    <p></p>
+                                                </stl:channels> 
+                                            </footer> 
+                                        </section>  
+                                    </div>
+                                </div>
+                                <div class="8u  12u(narrower) important(narrower)">
+                                    <div id="content">
+                                        <!-- Content -->
+                                        <article>
+                                            <header>
+                                                <h2>{Channel.Title}</h2> 
+                                            </header>    
+                                            <span class="image featured"><img src="{Channel.ImageUrl}" alt="" /></span>
+                                            <p>
+                                                 {Channel.Content}
+                                            </p> 
+                                        </article>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>  
+                <!-- Footer -->
+                <stl:include file="@/include/footer.html"></stl:include>
+    
+            </div>
+    
+           <!-- Scripts -->
+		    <stl:include file="@/include/js.html"></stl:include> 
+    
+        </body>
+    </html>
